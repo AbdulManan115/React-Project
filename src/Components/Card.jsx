@@ -118,7 +118,10 @@ export default function Card() {
       <div className="mt-10 py-5 px-5 md:pd-10">
         <div className="grid grid-cols-1  lg:grid-cols-2 gap-6">
           {carddata.map((item, index) => (
+            <div key={index}>
+
             <CardDesign items={item} index={index} />
+            </div>
           ))}
         </div>
       </div>
@@ -127,11 +130,11 @@ export default function Card() {
 }
 
 function CardDesign({items, index}) {
-  console.log("items is ", items.title)
+  
   const [Tab, SetTab] = useState(0);
-key={index}
+
   return (
-    <div key={index} className=" flex justify-between ">
+    <div className=" flex justify-between ">
       <div className="">
         <div className="overflow-hidden ">
           <img
