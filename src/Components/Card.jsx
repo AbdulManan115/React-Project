@@ -64,7 +64,7 @@ export default function Card() {
       img1: "Cards/7.2.webp",
       img2: "Cards/7.3.webp",
       img3: "Cards/7.4.webp",
-      img3: "Cards/7.4.webp",
+     
     },
     {
       title: "Wedges For Women 10350841",
@@ -129,7 +129,7 @@ export default function Card() {
 function CardDesign({items, index}) {
   console.log("items is ", items.title)
   const [Tab, SetTab] = useState(0);
-
+key={index}
   return (
     <div key={index} className=" flex justify-between ">
       <div className="">
