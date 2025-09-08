@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar'
 import Slider from './Components/Imageslider'
 import Card from './Components/Card'
 import Footer from './Components/Footer'
+import BottomMenu from './Components/BottomMenu'
 
 export default function App() {
   return (
@@ -11,7 +12,8 @@ export default function App() {
     <Navbar/>
     <Slider/>
     <Card/>
-    {/* <Footer/> */}
+     <Footer/> 
+    <BottomMenu/>
     </>
   )
 }

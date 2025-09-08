@@ -12,21 +12,21 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="mt-5">
-      <div className="grid grid-cols-1 lg:grid-cols-2 border bg-[#F6F6F8] py-20">
+    <div className="mt-5   ">
+      <div className="grid grid-cols-1 lg:grid-cols-2  bg-[#F6F6F8]  lg:py-20">
         <div className=" flex justify-between ">
-          <div className="">
+          <div className="md:max-w-80 w-full lg:max-w-full">
             <div>
               <p className="">Get in touch</p>
             </div>
-            <div className="flex gap-2 pt-5">
-              <MapPin className="text-[#A5A5A5]" />
+            <div className="flex  pt-5">
+              <MapPin className=" text-[#A5A5A5] h-10 w-auto" />
               <p className="text-[#A5A5A5]">
                 6th Floor Makkah Tower, Adam Jee Road Opposite to Old Varan Bus
                 Stop Saddar Rawalpindi, 46000
               </p>
             </div>
-            <div className="flex gap-2 py-5">
+            <div className="flex  py-5">
               <Mail className="text-[#A5A5A5]" />
               <p className="text-[#A5A5A5]">care@metroshoes.com.pk</p>
             </div>
@@ -51,9 +51,9 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="px-12">
+          <div className="px-25  ">
             <p className="text-bold">Explore</p>
-            <ul className="py-5  space-y-3 text-[#A5A5A5]">
+            <ul className="py-5 space-y-3 text-[#A5A5A5]">
               <li>Women</li>
               <li>Men</li>
               <li>Sale</li>
@@ -64,7 +64,7 @@ export default function Footer() {
         </div>
 
         {/* Right Section */}
-        <div className="border flex justify-between px-20">
+        <div className=" flex justify-between lg:px-20">
           <div>
             <p className="text-bold">Useful Links</p>
             <ul className="py-5  space-y-3 text-[#A5A5A5]">
