@@ -15,7 +15,7 @@ export default function Mobilefooter() {
         <p className='font-semibold text-[#2F2F30]'>Useful Links</p>
         <Plus className='text-gray-400'/>
       </div>
-      <div className='flex justify-between items-center pt-5'>
+      <div className='flex justify-between items-center py-5'>
         <p className='font-semibold text-[#2F2F30]'>Newsletter Signup</p>
         <Plus className='text-gray-400'/>
       </div>
