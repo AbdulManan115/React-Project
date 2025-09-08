@@ -5,7 +5,7 @@ export default function BottomMenu() {
     <div className="lg:hidden fixed  left-0 right-0 bottom-0 z-50 bg-white shadow-md ">
       <div
         className="flex justify-between items-center
-       max-w-160 mx-auto   gap-10"
+       max-w-160 mx-auto px-6 mb-5  gap-10"
       >
         <div className="flex flex-col items-center">
           <LayoutGrid />
