@@ -83,7 +83,7 @@ export default function Slider() {
   }, [current]);
 
   return (
-    <div className="relative w-full h-full mx-auto">
+    <div className="relative w-full h-full mx-aut mt-20">
       {/* Images */}
       <div className="overflow-hidden">
         <div

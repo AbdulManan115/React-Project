@@ -51,18 +51,20 @@ const data = [
 
 function LaptopNavbar() {
   return (
-    <div className="  w-full max-w-7xl mx-auto flex justify-between items-center ">
-      <div>
+     <div className="fixed top-0 left-0 right-0 z-10 bg-white shadow-md">
+
+    <div className="  w-full max-w-7xl mx-auto flex justify-between items-center  ">
+      <div >
         <img src="Metro.1.avif" />
       </div>
       <div className="">
         <ul className="flex gap-4">
           {data.map((item, index) => (
             <div
-              key={index}
-              className={` hover:text-gray-600 font-bold cursor-pointer ${
-                item.title === "Sale" ? "text-red-500" : "text-black"
-              }`}
+            key={index}
+            className={` hover:text-gray-600 font-bold cursor-pointer ${
+              item.title === "Sale" ? "text-red-500" : "text-black"
+            }`}
             >
               {item.title}
             </div>
@@ -76,10 +78,14 @@ function LaptopNavbar() {
         <User className="cursor-pointer" />
       </div>
     </div>
+</div>
   );
 }
 function TabNavbar({toggleSidebar}) {
   return (
+    
+    <div  className="fixed top-0 left-0 right-0 z-10 bg-white shadow-md">
+
     <div className=" grid grid-cols-3 items-center px-8">
       <Menu onClick={toggleSidebar}/>
       <div>
@@ -92,12 +98,15 @@ function TabNavbar({toggleSidebar}) {
         <User className="cursor-pointer" />
       </div>
     </div>
+    </div>
   );
 }
 
 function MobileNavbar({ toggleSidebar }) {
   return (
-    <div className=" grid grid-cols-3 items-center px-5">
+    <div className="fixed top-0 left-0 right-0 z-10 bg-white shadow-md">
+
+    <div className="grid grid-cols-3 items-center px-5">
       <Menu onClick={toggleSidebar} />
       <div>
         <img src="Metro.1.avif" />{" "}
@@ -106,6 +115,7 @@ function MobileNavbar({ toggleSidebar }) {
         <Search className="cursor-pointer" />
         <ShoppingCart className="cursor-pointer" />
       </div>
+    </div>
     </div>
   );
 }

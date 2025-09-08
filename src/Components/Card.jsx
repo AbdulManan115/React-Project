@@ -134,7 +134,7 @@ function CardDesign({items, index}) {
   const [Tab, SetTab] = useState(0);
 
   return (
-    <div className=" flex justify-between ">
+    <div className=" flex justify-between mb-5 ">
       <div className="">
         <div className="overflow-hidden ">
           <img
